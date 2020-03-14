@@ -93,14 +93,14 @@ import { FormControl } from "@angular/forms";
   ]
 })
 export class SelectAutocompleteComponent implements OnChanges, DoCheck {
-  @Input() selectPlaceholder: string = "search...";
+  @Input() selectPlaceholder = "search...";
   @Input() placeholder: string;
   @Input() options;
   @Input() disabled = false;
   @Input() display = "display";
   @Input() value = "value";
   @Input() formControl: FormControl = new FormControl();
-  @Input() errorMsg: string = "Field is required";
+  @Input() errorMsg = "Field is required";
   @Input() showErrorMsg = false;
   @Input() selectedOptions;
   @Input() multiple = true;
